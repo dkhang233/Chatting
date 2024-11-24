@@ -1,0 +1,203 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <!--Arabic, English, Finnish, Hebrew, Japanese, Polish-->
+
+    <!--Default-->
+    <System:String x:Key="UserSettingsDefault">User Settings</System:String>
+    <System:String x:Key="AccountDefault">Account</System:String>
+    <System:String x:Key="ChangeProfilePictureDefault">Change Profile Picture</System:String>
+    <System:String x:Key="ChangeDisplayNameDefault">Change Display Name</System:String>
+    <System:String x:Key="AppearanceDefault">Appearance</System:String>
+    <System:String x:Key="ThemeDefault">Theme</System:String>
+    <System:String x:Key="MessageDisplayDefault">Message Display</System:String>
+    <System:String x:Key="ChangeLanguageDefault">Change Language</System:String>
+    <System:String x:Key="ApplicationDefault">Application</System:String>
+    <System:String x:Key="LogsDefault">Logs</System:String>
+    <System:String x:Key="LogOutDefault">Log Out</System:String>
+    <System:String x:Key="MessageHistoryDefault">Message History</System:String>
+    <System:String x:Key="UsersDefault">Users</System:String>
+    <System:String x:Key="SendAMessageDefault">Message</System:String>
+    <System:String x:Key="PrivatelyChattingDefault">Privately Chatting To: </System:String>
+    <System:String x:Key="LoadPreviousMessagesDefault">Load Previous Messages</System:String>
+    <System:String x:Key="ArabicDefault">Arabic</System:String>
+    <System:String x:Key="EnglishDefault">English</System:String>
+    <System:String x:Key="FinnishDefault">Finnish</System:String>
+    <System:String x:Key="HebrewDefault">Hebrew</System:String>
+    <System:String x:Key="JapaneseDefault">Japanese</System:String>
+    <System:String x:Key="PolishDefault">Polish</System:String>
+
+
+
+
+    <!--Arabic-->
+    <System:String x:Key="UserSettingsArabic">إعدادات المستخدم</System:String>
+    <System:String x:Key="AccountArabic">حساب</System:String>
+    <System:String x:Key="ChangeProfilePictureArabic">تغيير صورة الملف الشخصي</System:String>
+    <System:String x:Key="ChangeDisplayNameArabic">تغيير اسم العرض</System:String>
+    <System:String x:Key="AppearanceArabic">مظهر خارجي</System:String>
+    <System:String x:Key="ThemeArabic">سمة</System:String>
+    <System:String x:Key="MessageDisplayArabic">عرض الرسالة</System:String>
+    <System:String x:Key="ChangeLanguageArabic">تغيير اللغة</System:String>
+    <System:String x:Key="ApplicationArabic">تطبيق</System:String>
+    <System:String x:Key="LogsArabic">السجلات</System:String>
+    <System:String x:Key="LogOutArabic">تسجيل خروج</System:String>
+    <System:String x:Key="MessageHistoryArabic">تاريخ الرسالة</System:String>
+    <System:String x:Key="UsersArabic">المستخدمون</System:String>
+    <System:String x:Key="SendAMessageArabic">ارسل رسالة</System:String>
+    <System:String x:Key="PrivatelyChattingArabic">:الدردشة الخاصة مع</System:String>
+    <System:String x:Key="LoadPreviousMessagesArabic">تحميل الرسائل السابقة</System:String>
+    <System:String x:Key="ArabicArabic">عربي</System:String>
+    <System:String x:Key="EnglishArabic">إنجليزي</System:String>
+    <System:String x:Key="FinnishArabic">فنلندية</System:String>
+    <System:String x:Key="HebrewArabic">عبرية</System:String>
+    <System:String x:Key="JapaneseArabic">يابانية</System:String>
+    <System:String x:Key="PolishArabic">بولندي</System:String>
+    <System:String x:Key="DarkArabic">داكن</System:String>
+    <System:String x:Key="LightArabic">ضوء</System:String>
+    <System:String x:Key="CozyArabic">أنيق</System:String>
+    <System:String x:Key="CompactArabic">مدمج</System:String>
+
+    <!--English-->
+    <System:String x:Key="UserSettingsEnglish">User Settings</System:String>
+    <System:String x:Key="AccountEnglish">Account</System:String>
+    <System:String x:Key="ChangeProfilePictureEnglish">Change Profile Picture</System:String>
+    <System:String x:Key="ChangeDisplayNameEnglish">Change Display Name</System:String>
+    <System:String x:Key="AppearanceEnglish">Appearance</System:String>
+    <System:String x:Key="ThemeEnglish">Theme</System:String>
+    <System:String x:Key="MessageDisplayEnglish">Message Display</System:String>
+    <System:String x:Key="ChangeLanguageEnglish">Change Language</System:String>
+    <System:String x:Key="ApplicationEnglish">Application</System:String>
+    <System:String x:Key="LogsEnglish">Logs</System:String>
+    <System:String x:Key="LogOutEnglish">Log Out</System:String>
+    <System:String x:Key="MessageHistoryEnglish">Message History</System:String>
+    <System:String x:Key="SendAMessageEnglish">Message</System:String>
+    <System:String x:Key="PrivatelyChattingEnglish">Privately Chatting To:</System:String>
+    <System:String x:Key="LoadPreviousMessagesEnglish">Load Previous Messages</System:String>
+    <System:String x:Key="ArabicEnglish">Arabic</System:String>
+    <System:String x:Key="EnglishEnglish">English</System:String>
+    <System:String x:Key="FinnishEnglish">Finnish</System:String>
+    <System:String x:Key="HebrewEnglish">Hebrew</System:String>
+    <System:String x:Key="JapaneseEnglish">Japanese</System:String>
+    <System:String x:Key="PolishEnglish">Polish</System:String>
+    <System:String x:Key="DarkEnglish">Dark</System:String>
+    <System:String x:Key="LightEnglish">Light</System:String>
+    <System:String x:Key="CozyEnglish">Cozy</System:String>
+    <System:String x:Key="CompactEnglish">Compact</System:String>
+
+    <!--Finnish-->
+    <System:String x:Key="UserSettingsFinnish">Käyttäjäasetukset</System:String>
+    <System:String x:Key="AccountFinnish">Tili</System:String>
+    <System:String x:Key="ChangeProfilePictureFinnish">Vaihda profiilikuva</System:String>
+    <System:String x:Key="ChangeDisplayNameFinnish">Vaihda näyttönimi</System:String>
+    <System:String x:Key="AppearanceFinnish">Ulkomuoto</System:String>
+    <System:String x:Key="ThemeFinnish">Teema</System:String>
+    <System:String x:Key="MessageDisplayFinnish">Viestien ulkoasu</System:String>
+    <System:String x:Key="ChangeLanguageFinnish">Vaihda kieltä</System:String>
+    <System:String x:Key="ApplicationFinnish">Sovellus</System:String>
+    <System:String x:Key="LogsFinnish">Valvontaloki</System:String>
+    <System:String x:Key="LogOutFinnish">Kirjaudu ulos</System:String>
+    <System:String x:Key="MessageHistoryFinnish">Viestihistoria</System:String>
+    <System:String x:Key="UsersFinnish">Käyttäjät</System:String>
+    <System:String x:Key="SendAMessageFinnish">Kirjoita Viesti</System:String>
+    <System:String x:Key="PrivatelyChattingFinnish">Yksityiskeskustelu:</System:String>
+    <System:String x:Key="LoadPreviousMessagesFinnish">Lataa aiemmat viestit</System:String>
+    <System:String x:Key="ArabicFinnish">Arabia</System:String>
+    <System:String x:Key="EnglishFinnish">Englanti</System:String>
+    <System:String x:Key="FinnishFinnish">Suomi</System:String>
+    <System:String x:Key="HebrewFinnish">Heprea</System:String>
+    <System:String x:Key="JapaneseFinnish">Japani</System:String>
+    <System:String x:Key="PolishFinnish">Puolaa</System:String>
+    <System:String x:Key="DarkFinnish">Tumma</System:String>
+    <System:String x:Key="LightFinnish">Vaalea</System:String>
+    <System:String x:Key="CozyFinnish">Tyylikäs</System:String>
+    <System:String x:Key="CompactFinnish">Kompakti</System:String>
+
+    <!--Hebrew-->
+    <System:String x:Key="UserSettingsHebrew">הגדרות משתמש</System:String>
+    <System:String x:Key="AccountHebrew">חֶשְׁבּוֹן</System:String>
+    <System:String x:Key="ChangeProfilePictureHebrew">שנה תמונת פרופיל</System:String>
+    <System:String x:Key="ChangeDisplayNameHebrew">שנה את שם התצוגה</System:String>
+    <System:String x:Key="AppearanceHebrew">מראה חיצוני</System:String>
+    <System:String x:Key="ThemeHebrew">נושא</System:String>
+    <System:String x:Key="MessageDisplayHebrew">תצוגת הודעות</System:String>
+    <System:String x:Key="ChangeLanguageHebrew">שנה שפה</System:String>
+    <System:String x:Key="ApplicationHebrew">יישום</System:String>
+    <System:String x:Key="LogsHebrew">יומני ניטור</System:String>
+    <System:String x:Key="LogOutHebrew">להתנתק</System:String>
+    <System:String x:Key="MessageHistoryHebrew">היסטוריית הודעות</System:String>
+    <System:String x:Key="UsersHebrew">משתמשים</System:String>
+    <System:String x:Key="SendAMessageHebrew">שלח הודעה</System:String>
+    <System:String x:Key="PrivatelyChattingHebrew">:צ'אט פרטי אל</System:String>
+    <System:String x:Key="LoadPreviousMessagesHebrew">טען הודעות קודמות</System:String>
+    <System:String x:Key="ArabicHebrew">עֲרָבִית</System:String>
+    <System:String x:Key="EnglishHebrew">אנגלית</System:String>
+    <System:String x:Key="FinnishHebrew">פִינִית</System:String>
+    <System:String x:Key="HebrewHebrew">עִברִית</System:String>
+    <System:String x:Key="JapaneseHebrew">יַפָּנִית</System:String>
+    <System:String x:Key="PolishHebrew">פּוֹלָנִית</System:String>
+    <System:String x:Key="DarkHebrew">אפל</System:String>
+    <System:String x:Key="LightHebrew">אוֹר</System:String>
+    <System:String x:Key="CozyHebrew">מסוגנן</System:String>
+    <System:String x:Key="CompactHebrew">קוֹמפָּקטִי</System:String>
+
+    <!--Japanese-->
+    <System:String x:Key="UserSettingsJapanese">ユーザー設定</System:String>
+    <System:String x:Key="AccountJapanese">アカウント</System:String>
+    <System:String x:Key="ChangeProfilePictureJapanese">プロフィール画像を変更</System:String>
+    <System:String x:Key="ChangeDisplayNameJapanese">表示名の変更</System:String>
+    <System:String x:Key="AppearanceJapanese">外観</System:String>
+    <System:String x:Key="ThemeJapanese">テーマ</System:String>
+    <System:String x:Key="MessageDisplayJapanese">メッセージ表示</System:String>
+    <System:String x:Key="ChangeLanguageJapanese">言語を変更</System:String>
+    <System:String x:Key="ApplicationJapanese">応用</System:String>
+    <System:String x:Key="LogsJapanese">ログの監視</System:String>
+    <System:String x:Key="LogOutJapanese">ログアウト</System:String>
+    <System:String x:Key="MessageHistoryJapanese">メッセージ履歴</System:String>
+    <System:String x:Key="UsersJapanese">ユーザー</System:String>
+    <System:String x:Key="SendAMessageJapanese">メッセージを送る</System:String>
+    <System:String x:Key="PrivatelyChattingJapanese">プライベートチャット：</System:String>
+    <System:String x:Key="LoadPreviousMessagesJapanese">前のメッセージを読み込む</System:String>
+    <System:String x:Key="ArabicJapanese">アラビア語</System:String>
+    <System:String x:Key="EnglishJapanese">英語</System:String>
+    <System:String x:Key="FinnishJapanese">フィンランド語</System:String>
+    <System:String x:Key="HebrewJapanese">ヘブライ語</System:String>
+    <System:String x:Key="JapaneseJapanese">日本</System:String>
+    <System:String x:Key="PolishJapanese">研磨</System:String>
+    <System:String x:Key="DarkJapanese">暗い</System:String>
+    <System:String x:Key="LightJapanese">光</System:String>
+    <System:String x:Key="CozyJapanese">スタイリッシュ</System:String>
+    <System:String x:Key="CompactJapanese">コンパクト</System:String>
+
+
+    <!--Polish-->
+    <System:String x:Key="UserSettingsPolish">Ustawienia użytkownika</System:String>
+    <System:String x:Key="AccountPolish">Rachunek</System:String>
+    <System:String x:Key="ChangeProfilePicturePolish">Zmień zdjęcie profilowe</System:String>
+    <System:String x:Key="ChangeDisplayNamePolish">Zmień wyświetlaną nazwę</System:String>
+    <System:String x:Key="AppearancePolish">Wygląd zewnętrzny</System:String>
+    <System:String x:Key="ThemePolish">Motyw</System:String>
+    <System:String x:Key="MessageDisplayPolish">Wyświetlacz wiadomości</System:String>
+    <System:String x:Key="ChangeLanguagePolish">Zmień język</System:String>
+    <System:String x:Key="ApplicationPolish">Aplikacja</System:String>
+    <System:String x:Key="LogsPolish">Dzienniki</System:String>
+    <System:String x:Key="LogOutPolish">Wyloguj</System:String>
+    <System:String x:Key="MessageHistoryPolish">Historia wiadomości</System:String>
+    <System:String x:Key="UsersPolish">Użytkownicy</System:String>
+    <System:String x:Key="SendAMessagePolish">Wysłać wiadomość</System:String>
+    <System:String x:Key="PrivatelyChattingPolish">Prywatne rozmowy：</System:String>
+    <System:String x:Key="LoadPreviousMessagesPolish">Załaduj poprzednie wiadomości</System:String>
+    <System:String x:Key="ArabicPolish">Arabski</System:String>
+    <System:String x:Key="EnglishPolish">Angielski</System:String>
+    <System:String x:Key="FinnishPolish">Fiński</System:String>
+    <System:String x:Key="HebrewPolish">Hebrajski</System:String>
+    <System:String x:Key="JapanesePolish">Japoński</System:String>
+    <System:String x:Key="PolishPolish">Polski</System:String>
+    <System:String x:Key="DarkPolish">Ciemny</System:String>
+    <System:String x:Key="LightPolish">Światło</System:String>
+    <System:String x:Key="CozyPolish">Przytulny</System:String>
+    <System:String x:Key="CompactPolish">Kompaktowy</System:String>
+
+
+</ResourceDictionary>

@@ -1,0 +1,198 @@
+﻿<Window x:Class="ChitChat.Views.HomeView"      
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChitChat.Views"
+        xmlns:Helper="clr-namespace:ChitChat.Helper"
+        mc:Ignorable="d"
+        Title="HomeView" 
+        Height="549" 
+        Width="654.5"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{StaticResource HomeWindow}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="{materialDesign:MaterialDesignFont}"
+        ResizeMode="NoResize" 
+        MouseDown="Window_MouseDown">
+
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding LoginCommand}" Key="Enter"></KeyBinding>
+    </Window.InputBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <materialDesign:Transitioner x:Name="Transitioner" Grid.RowSpan="6" Grid.Row="1" Grid.ColumnSpan="3" Panel.ZIndex="1" SelectedIndex="2">
+            <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect Kind=ExpandIn}">
+                <local:RegisterView Margin="0,0,0,-1"></local:RegisterView>
+            </materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect Kind=ExpandIn}">
+                <local:PasswordRecoveryView Margin="0,0,0,-1"></local:PasswordRecoveryView>
+            </materialDesign:TransitionerSlide>
+            <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect Kind=SlideInFromBottom}">
+            </materialDesign:TransitionerSlide>
+        </materialDesign:Transitioner>
+       
+
+        <!--Black Border & Exit Button-->
+        <Border Background="#202225" Grid.Row="0" Grid.ColumnSpan="3">
+            
+        </Border>
+        
+        <DockPanel LastChildFill="False">
+            <materialDesign:PackIcon Foreground="Silver" Kind="ChatBubbleOutline" Height="20" Width="28" VerticalAlignment="Center"></materialDesign:PackIcon>
+            <TextBlock Text="Chit Chat" 
+                   TextAlignment="Center"
+                       VerticalAlignment="Center"
+                   FontSize="15"
+                   Foreground="White" Style="{StaticResource MaterialDesignHeadline3TextBlock}" 
+                   Width="70"/>
+        </DockPanel>
+        
+        <Button  BorderBrush="Transparent" Style="{StaticResource ExitButton}" DockPanel.Dock="Right" Click="Exit_Click" Grid.Column="2" HorizontalAlignment="Right">
+            <Image Source="/Resources/Exit.png" Height="35" Width="35" VerticalAlignment="Center"></Image>
+        </Button>
+        
+        <DockPanel Grid.Row="1" Grid.Column="1" LastChildFill="False" VerticalAlignment="Bottom">
+            <materialDesign:PackIcon Foreground="Silver" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,20,0,0" Kind="Account" Grid.Row="1" Height="25" Width="22">
+            </materialDesign:PackIcon>
+            <!--User Name-->
+            <TextBox HorizontalAlignment="Left"
+                 Margin="5,0,0,0"
+                 DockPanel.Dock="Left"
+                 Height="50"
+                 Width="180"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 FontSize="20"
+                 BorderBrush="White"
+                 Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" 
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 materialDesign:TextFieldAssist.UnderlineBrush="DimGray"
+                 CaretBrush="White"
+                 Foreground="AliceBlue"   
+                 materialDesign:HintAssist.Hint="User Name"
+                 materialDesign:HintAssist.Foreground="AntiqueWhite">
+            </TextBox>
+        </DockPanel>
+
+        <!--Password-->
+        <DockPanel Grid.Row="2" Grid.Column="1" LastChildFill="False" VerticalAlignment="Bottom" Margin="0,0,0,10">
+            <materialDesign:PackIcon DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,20,0,0" Kind="Key" Foreground="Silver" Grid.Row="1" Height="25" Width="22"></materialDesign:PackIcon>
+            <PasswordBox HorizontalAlignment="Right" 
+                 Margin="5,0,0,0"
+                 Name="PasswordB"
+                 DockPanel.Dock="Left"
+                 Width="180"
+                 Height="50"
+                 Grid.Row="1"
+                 FontSize="20"
+                 BorderBrush="White"
+                 Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" 
+                 materialDesign:HintAssist.Hint="Password"
+                 materialDesign:HintAssist.Foreground="AntiqueWhite"
+                 HorizontalContentAlignment="Stretch"
+                 VerticalContentAlignment="Bottom"
+                 CaretBrush="White"
+                 materialDesign:TextFieldAssist.UnderlineBrush="DimGray"
+                 Foreground="AliceBlue"
+                 PasswordChanged="OnPasswordChanged"></PasswordBox>
+        </DockPanel>
+
+
+        <!--Login-->
+        <Button 
+                Grid.Row="4"
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                BorderBrush="#FF2C2B2B"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Content="Login"
+                FontSize="24"
+                Background="#303338"
+                Foreground="White"
+                Command="{Binding LoginCommand, UpdateSourceTrigger=PropertyChanged}" Height="70" Width="160"/>
+
+        <!--Recovery-->
+        <Button 
+                Grid.Row="6"
+                Grid.Column="1"       
+                BorderBrush="Transparent"
+                Content="Forgot your password?"
+                Click="RecoveryClick"
+                FontSize="15"
+                Background="Transparent"
+                Foreground="Silver"
+                Height="20" Width="Auto" HorizontalContentAlignment="Center" VerticalAlignment="Top" Padding="0"/>
+
+
+        <!--Register-->
+        <Button
+            Grid.Row="5"
+            Grid.Column="1"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Content="Register" 
+            FontSize="25"
+            Click="Register"
+
+            Foreground="White"
+            Background="#303338"
+           BorderBrush="#FF2C2B2B" Height="70" Width="160"></Button>
+
+        <TextBlock Text="{Binding Status}"
+                   DataContext="{Binding HomeLogger}"
+                   Grid.Row="6"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"
+                   FontSize="15"
+                   TextAlignment="Center"
+                   Margin="0,0,0,10"
+                   Foreground="White"></TextBlock>
+
+        <ProgressBar
+         Value="0"
+         IsIndeterminate="True" 
+            Grid.Row="6"
+            Grid.Column="1"
+            VerticalAlignment="Bottom"
+            Margin="0,0,0,15"
+            Height="25"
+            Width="30"
+            Foreground="Silver">
+            <ProgressBar.Style>
+                <Style TargetType="ProgressBar" BasedOn="{StaticResource MaterialDesignCircularProgressBar}">
+                    <Setter Property="Visibility" Value="Visible"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsConnecting}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsConnecting}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ProgressBar.Style>
+        </ProgressBar>
+
+        <CheckBox Grid.Row="3" IsChecked="{Binding SaveCredentials}" VerticalAlignment="Center" Foreground="Silver" FontSize="15" HorizontalAlignment="Center" Grid.Column="1" Margin="-10,0,0,0" Content="Save Login" Command="{Binding SaveCredentialsCommand}"></CheckBox>
+
+    </Grid>
+</Window>
